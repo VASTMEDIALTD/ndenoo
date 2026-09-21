@@ -1,0 +1,21 @@
+{
+  "name": "MPesa Settings",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "fields": [
+    {"fieldname": "enabled", "fieldtype": "Check", "label": "Enabled"},
+    {"fieldname": "consumer_key", "fieldtype": "Data", "label": "Consumer Key"},
+    {"fieldname": "consumer_secret", "fieldtype": "Password", "label": "Consumer Secret"},
+    {"fieldname": "initiator_name", "fieldtype": "Data", "label": "Initiator Name"},
+    {"fieldname": "security_credential", "fieldtype": "Password", "label": "Security Credential"},
+    {"fieldname": "shortcode", "fieldtype": "Data", "label": "Business Shortcode"},
+    {"fieldname": "result_url", "fieldtype": "Data", "label": "Result URL"},
+    {"fieldname": "timeout_url", "fieldtype": "Data", "label": "Timeout URL"},
+    {"fieldname": "remarks", "fieldtype": "Small Text", "label": "Default Remarks"}
+  ],
+  "permissions": [
+    {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "Accounts Manager", "read": 1, "write": 1}
+  ]
+}

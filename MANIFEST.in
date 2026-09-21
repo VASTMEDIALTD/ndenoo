@@ -1,0 +1,5 @@
+include mpesa_b2c_integration/**/*.py
+include mpesa_b2c_integration/**/*.json
+include mpesa_b2c_integration/**/*.js
+include mpesa_b2c_integration/**/*.html
+recursive-include mpesa_b2c_integration/public *

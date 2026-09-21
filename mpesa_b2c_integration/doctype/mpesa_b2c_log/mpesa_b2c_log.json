@@ -1,0 +1,18 @@
+{
+  "name": "MPesa B2C Log",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "is_submittable": 0,
+  "fields": [
+    {"fieldname": "payment_entry", "fieldtype": "Link", "options": "Payment Entry", "label": "Payment Entry"},
+    {"fieldname": "request_id", "fieldtype": "Data", "label": "Request ID"},
+    {"fieldname": "status", "fieldtype": "Data", "label": "Status"},
+    {"fieldname": "request_payload", "fieldtype": "Code", "label": "Request Payload"},
+    {"fieldname": "response_payload", "fieldtype": "Code", "label": "Response Payload"},
+    {"fieldname": "request_time", "fieldtype": "Datetime", "label": "Request Time"}
+  ],
+  "permissions": [
+    {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "Accounts Manager", "read": 1, "write": 1}
+  ]
+}
